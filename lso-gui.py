@@ -1,3 +1,4 @@
+import os
 import sqlite3
 import swap_handler
 import tkinter as tk
@@ -89,7 +90,18 @@ class ui:
 
             font_look_text = "Font önizlemesi:"
 
-        self.situation_info = tk.Label(self.main_tab, text="")
+        swap_usage_info = os.popen(
+            "grep Swap /proc/meminfo").read().split('\n')[1].split()
+        total_swap_usage = round(
+            float(swap_usage_info[len(swap_usage_info)-2])  / 1048576, 2)
+
+        if self.db.language == "en":
+            self.situation_info = tk.Label(
+                self.main_tab, text=f"Situation: Swap Area {total_swap_usage}GB")
+        else:
+            self.situation_info = tk.Label(
+                self.main_tab, text=f"Durum: Swap Alanı {total_swap_usage}GB")
+
         self.situation_info.pack(pady=pady)
 
         self.language_var = tk.StringVar(
@@ -184,7 +196,6 @@ class ui:
                     title='Hata', message='Swap alanı başarıyla silindi!')
                 self.situation_info.config(text='Situation: swap alanı yok')
 
-
     def add_swap_toplevel(self):
         if swap_handler.has_swap():
             if self.db.language == "en":
@@ -194,7 +205,6 @@ class ui:
                 msg_box.showerror(
                     title='Hata', message='Zaten swap alanı bulunmakta!')
             return None
-
 
         self.toplevel = tk.Toplevel()
         self.toplevel.grab_set()
@@ -210,13 +220,15 @@ class ui:
         self.add_swap_entry = tk.Entry(self.toplevel)
         self.add_swap_entry.pack(pady=15)
 
-        tk.Button(self.toplevel, text='Ok', command=self.add_swap).pack(pady=15)
+        tk.Button(self.toplevel, text='Ok',
+                  command=self.add_swap).pack(pady=15)
 
         self.toplevel.mainloop()
 
     def add_swap(self):
         try:
-            size = int(self.add_swap_entry.get()) * 1024
+            gb = self.add_swap_entry.get()
+            size = int(gb) * 1024
         except:
             if self.db.language == "en":
                 msg_box.showerror(
@@ -235,10 +247,12 @@ class ui:
                     title='Hata', message='Swap alanı oluşturulurken bir sorun oluştu.')
         else:
             if self.db.language == "en":
-                self.situation_info.config(text='Situation: swap area active')
+                self.situation_info.config(
+                    text=f'Situation: Swap Area: {gb}GB')
             else:
-                self.situation_info.config(text='Durum: swap alanı aktif')
+                self.situation_info.config(text=f'Durum: Swap Alanı {gb}GB')
             self.toplevel.destroy()
+
 
 ui = ui()
 ui.window.mainloop()
