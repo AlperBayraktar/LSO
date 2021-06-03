@@ -1,3 +1,6 @@
+# New feature: Changed situation info, now it can show active swap area size
+# Yenilik: situation info değişti, artık swap alanı boyutu da görülebiliyor.
+
 import os
 import sqlite3
 import swap_handler
