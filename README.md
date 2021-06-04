@@ -48,7 +48,7 @@ GUI Version Photo:
 
 ------------------------------------------------------------------------------------------------------------------
 
-Son güncelleme 3.06.2021: Home menüsüne swap alanı kullanımı artık hep gözüküyor.
+Son güncelleme 3.06.2021: Home menüsünde swap alanı kullanımı artık hep gözüküyor.
 
 Kullanımı göstermek için output'ı almak gerekiyor, output için böyle bir kod kullandık:
 
