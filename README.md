@@ -1,7 +1,7 @@
 > # LSO - Linux Swap Operator
 
 > # Türkçe - LSO Nedir?
-> LSO, diğer adıyla Linux Swap Operator Linux işletim sistemleri için Swap alanını yönetebileceğiniz hem GUİ, hem terminal versiyonu olan bir yazılımdır.</p>
+> LSO, diğer adıyla Linux Swap Operator Linux işletim sistemleri için Swap alanını yönetebileceğiniz hem GUI, hem terminal versiyonu olan bir yazılımdır.</p>
 
 > ## Yapımcılar
 >Kyronex14, AlperBayraktar
