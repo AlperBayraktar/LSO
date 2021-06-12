@@ -34,4 +34,6 @@ sudo python lso-gui.py / lso.py
 
 > # GUI:
 
-![photo-gui-1](https://user-images.githubusercontent.com/85232699/120631339-713aeb00-c470-11eb-9666-35880e352169.png)![photo-gui-2](https://user-images.githubusercontent.com/85232699/120631353-74ce7200-c470-11eb-99de-93f5d53a7a55.png)
+![photo-gui-1](https://user-images.githubusercontent.com/85232699/120631339-713aeb00-c470-11eb-9666-35880e352169.png)    ![photo-gui-2](https://user-images.githubusercontent.com/85232699/120631353-74ce7200-c470-11eb-99de-93f5d53a7a55.png)
+
+![photo-gui-3](https://cdn.discordapp.com/attachments/847073470948704296/853346506533634068/lso.png)    ![photo-gui-4](https://cdn.discordapp.com/attachments/847073470948704296/853346509243547648/lso2.png)
