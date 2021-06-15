@@ -1,39 +1,101 @@
-> # LSO - Linux Swap Operator
+# LSO - Linux Swap Operator
 
-> # Türkçe - LSO Nedir?
-> LSO, diğer adıyla Linux Swap Operator Linux işletim sistemleri için Swap alanını yönetebileceğiniz hem GUI, hem terminal versiyonu olan bir yazılımdır.</p>
+## Türkçe
 
-> ## Yapımcılar
->Kyronex14, AlperBayraktar
-> ## Emeği geçenler
->efe3535
+## LSO Nedir?
+LSO, diğer adıyla Linux Swap Operator Linux işletim sistemleri için Swap alanını yönetebileceğiniz hem GUI, hem terminal versiyonu olan bir yazılımdır.
 
-> ## Kullanım
-```diff
-sudo chmod +x lso-gui.py / lso.py
-sudo python lso-gui.py / lso.py
+
+## Yapımcılar
+
+- [@Kyronex14](https://www.github.com/Kyronex14) --> swap/terminal işlemleri
+- [@AlperBayraktar](https://www.github.com/AlperBayraktar) --> TKinter ile GUI
+
+## Emeği Geçenler
+
+- [@efe3535](https://www.github.com/efe3535)
+## Linux İşletim Sisteminizde Çalıştırın
+
+Projeyi klonlayın
+
+```bash
+  git clone https://github.com/Kyronex14/LSO
 ```
 
-<hr>
+Proje dizinine gidin
 
-> # English - What Is LSO?
-> LSO, also known as Linux Swap Operator, is a software with both GUI and terminal versions that you can manage the Swap area for Linux operating systems.
-
-> ## Developers
->Kyronex14, AlperBayraktar
-> ## Contributors 
->efe3535
-
-> ## Usage
-```diff
-sudo chmod +x lso-gui.py / lso.py
-sudo python lso-gui.py / lso.py
+```bash
+  cd LSO
+  # veya
+  cd LSO-main
 ```
 
-<hr>
+Gerekli paketleri yükleyin
 
-> # GUI:
+```bash
+  # Bu paketler normalde python içinde hazır gelir fakat import edemiyorsanız PIP ile indirebilirsiniz
+  # TKinter
+  pip install tk
+  # SQLite3
+  pip install pysqlite3
+  # pip çalışmazsa pip3 deneyebilirsiniz
+```
 
-![photo-gui-1](https://user-images.githubusercontent.com/85232699/120631339-713aeb00-c470-11eb-9666-35880e352169.png)    ![photo-gui-2](https://user-images.githubusercontent.com/85232699/120631353-74ce7200-c470-11eb-99de-93f5d53a7a55.png)
+Programı Çalıştırın
 
-![photo-gui-3](https://cdn.discordapp.com/attachments/847073470948704296/853346506533634068/lso.png)    ![photo-gui-4](https://cdn.discordapp.com/attachments/847073470948704296/853346509243547648/lso2.png)
+```bash
+  python lso-gui-new.py
+  # veya
+  python3 lso-gui-new.py
+```
+
+# LSO - Linux Swap Operator
+
+## English
+
+## What Is LSO?
+LSO, also known as Linux Swap Operator, is a software with both GUI and terminal versions that you can manage the Swap area for Linux operating systems.
+
+## Developers
+
+- [@Kyronex14](https://www.github.com/Kyronex14) --> swap/terminal processes
+- [@AlperBayraktar](https://www.github.com/AlperBayraktar) --> GUI with TKinter
+
+## Contributors
+
+- [@efe3535](https://www.github.com/efe3535)
+
+## Run On Your Linux OS
+
+Clone the project
+
+```bash
+  git clone https://github.com/Kyronex14/LSO
+```
+
+Cd into project folder
+
+```bash
+  cd LSO
+  # or
+  cd LSO-main
+```
+
+Download the packages
+
+```bash
+  # These packages are built-in but if you don't have them you can install with PIP
+  # TKinter
+  pip install tk
+  # SQLite3
+  pip install pysqlite3
+  # you cant try pip3 if pip doesn't work
+```
+
+Run the program
+
+```bash
+  python lso-gui-new.py
+  # or
+  python3 lso-gui-new.py
+```
