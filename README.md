@@ -25,8 +25,6 @@ Projeyi klonlayın
 Proje dizinine gidin
 
 ```bash
-  cd LSO
-  # veya
   cd LSO-main
 ```
 
@@ -76,8 +74,6 @@ Clone the project
 Cd into project folder
 
 ```bash
-  cd LSO
-  # or
   cd LSO-main
 ```
 
